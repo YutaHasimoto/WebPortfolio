@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>橋本雄太のポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#header").load("header.html");
+        });
+        $(document).ready(function() {
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <section>
+            <img src="images/shop_button.png" alt="ショップバーナー" class="shop_button">
+            <h3>日本から来ましたTシャツ</h3>
+            <p>
+                米国留学時にデザインしたTシャツ。留学先で初めて知り合った人との話題作りにとても便利。UTmeで販売中
+            </p>
+            <a href="https://utme.uniqlo.com/jp/front/mkt/commodities/NEg4hxg?locale=ja" target="_blank" rel="noopener noreferrer">
+                <img src="images/T-nihon.png" alt="留学時にデザインしたTシャツ。UTmeで販売中" class="animated-big">
+            </a>
+            <h3>仲間にせざるを得ないTシャツ</h3>
+            <p>
+                就活用にデザインしたTシャツ。良くも悪くも面接官に強烈な印象を叩き込む、至高の逸品。UTmeで販売中
+            </p>
+            <a href="https://utme.uniqlo.com/jp/front/mkt/commodities/NhRndYk?locale=ja" target="_blank" rel="noopener noreferrer">
+                <img src="images/T-syukatsu.png" alt="就活用にデザインしたTシャツ。UTmeで販売中" class="animated-big">
+            </a>
+        </section>
+    </main>
+    
+    <div id="footer"></div>
+</body>
+</html>

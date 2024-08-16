@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介 - 橋本雄太のポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+        });
+        $(document).ready(function() {
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <section>
+            <h1 class="center">著作権に関する記載</h1>
+            <p>当サイトで掲載している私の作品の著作権は、橋本雄太に帰属します。サイトの著作物の無断転載・無断使用を禁止します。</p>
+            <p>許諾申請、ご不明点があれば<a href="contact.html" target="_blank">こちら</a>からご連絡くださいますと幸いです。</p>
+
+            <h2>自由利用できる作品について</h2>
+            <p>当サイトで掲載している私の作品の一部は、MITライセンスに基づいて公開されています。</p>
+            <p>対象作品は<a href="https://codepen.io/Animis" target="_blank" rel="noopener noreferrer">こちら</a>からご確認ください。</p>
+
+            <h2>MIT Licenseについて</h2>
+            <p>当サイトではMITライセンスに基づいて公開されているコードを、サイトの一部に使用しています。<br>
+            以下にMITライセンスの全文を掲載します。</p>
+
+            <style>
+                body h4 a {
+                    color: inherit; /* 親要素から色を引き継ぐ */
+                }
+            </style>
+            <h4><a href="https://opensource.org/license/mit/" target="_blank" rel="noopener noreferrer">MIT License</a></h4>
+            <p>
+                Copyright (c) YEAR - YOUR NAME - URL TO ORIGINAL
+
+                Permission is hereby granted, free of charge, to any person 
+                obtaining a copy of this software and associated documentation 
+                files (the "Software"), to deal in the Software without restriction,
+                 including without limitation the rights to use, copy, modify, 
+                merge, publish, distribute, sublicense, and/or sell copies of 
+                the Software, and to permit persons to whom the Software is 
+                furnished to do so, subject to the following conditions:
+                
+                The above copyright notice and this permission notice shall 
+                be included in all copies or substantial portions of the Software.
+                
+                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
+                EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES 
+                OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND 
+                NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
+                HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+                WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+                OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+                DEALINGS IN THE SOFTWARE.
+            </p>
+
+            <img src="images/special_thanks.png" alt="Special Thanks">
+        </section>
+    </main>
+    
+    <div id="footer"></div>
+</body>
+</html>

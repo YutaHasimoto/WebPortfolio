@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>モデリング作品集 - 橋本雄太のポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.147.0/examples/js/controls/OrbitControls.js"></script><!--ビュアーのコントローラーをインストール-->
+    <script src="https://unpkg.com/three@0.147.0/examples/js/loaders/OBJLoader.js"></script><!--objファイルの読み込みツールをインストール-->
+    <script src="https://unpkg.com/three@0.147.0/examples/js/loaders/MTLLoader.js"></script><!--mtlファイルの読み込みツールをインストール-->
+    <script src="3dapple.js"></script>
+    <script src="3damoungus.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $("#header").load("header.html");
+        });
+        $(document).ready(function() {
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <section>
+            <img src="images/works_modeling_button.jpg" alt="モデリング作品集" width="100%" height="auto">
+            <p>質問やお問い合わせがあれば、以下の連絡先までお気軽にご連絡ください。</p>
+        </section>
+        <section>
+            <h3>Apple</h3>
+            <p>様々な種類のりんごを3Dモデルで作りました。マウスでドラッグすると回転します。</p>
+        </section>
+        <section class="threedCanvas">
+            <canvas id="apple"></canvas>
+        </section>
+        <section>
+            <p>しっかりレンダリングするとこうなります。Cyclesレンダリングだとめちゃ綺麗な質感になります。</p>
+            <img src="images/apple.jpg" alt="りんごの3Dモデル">
+        </section>
+        <section>
+            <h3>AmoungUs</h3>
+            <p>様々な種類のAmoungUsの3Dモデルを作成しました。マウスでドラッグすると回転します。</p>
+        </section>
+        <section class="threedCanvas">
+            <canvas id="amoungus"></canvas>
+        </section>
+
+
+    </main>
+    
+    <div id="footer"></div>
+</body>
+</html>

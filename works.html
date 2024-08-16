@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介 - 橋本雄太のポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="works.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+        });
+        $(document).ready(function() {
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <section>
+            <h2>作品集</h2>
+            <div class="flex-container">
+                <a href="appuiux.html">
+                    <img src="images/works_app_ui_ux_button.jpg" alt="App作品集はこちらから" class="animated-big image-radius work-button">
+                </a>
+                <a href="cad.html">
+                    <img src="images/works_3dcad_button.jpg" alt="CAD作品集はこちらから" class="animated-big image-radius work-button">
+                </a>
+                <a href="modeling.html">
+                    <img src="images/works_modeling_button.jpg" alt="3DCG作品集はこちらから" class="animated-big image-radius work-button">
+                </a>
+                <a href="data-science.html">
+                    <img src="images/works_data_science.jpg" alt="データサイエンス研究成果はこちらから" class="animated-big image-radius work-button">
+                </a>
+            </div>
+            <a href="shop.html">
+                <img src="images/shop_button.jpg" alt="作品ショップはこちらから" class="animated-big image-radius shop_button image-border">
+            </a>
+        </section>
+    </main>
+    <div id="footer"></div>
+</body>
+</html>

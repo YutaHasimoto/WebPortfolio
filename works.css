@@ -1,0 +1,33 @@
+.work-button {
+    width: 35vw; /* 画像の幅 */
+    height: calc(35vw * 9/16); /* 画像の高さ */
+    border: 2px solid #333; /* 枠線 */
+    margin: 3px; /* 画像の間隔 */
+}
+@media screen and (max-width: 600px) {
+    .work-button {
+        width: 100%;
+        height: calc(100% * 9/16);
+        border: 2px solid #333;
+        margin: 3px;
+    }
+}
+
+
+.shop-button {
+    width: 70%;
+    height: calc(70% * 9/32);
+    border: 2px solid #333;
+    margin: 3px;
+}
+
+.app-frame {
+    border: 2px solid #333;
+    margin: 1px;
+    border-radius: 20%;
+}
+
+.app-iframe {
+    border: 2px solid #333;
+    margin: 3px;
+}

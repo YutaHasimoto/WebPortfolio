@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お部屋紹介 - 橋本雄太のポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="faq.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#header").load("header.html");
+        });
+        $(document).ready(function() {
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <main>     
+    <section class="faq"><h2>資格・スキル一覧</h2>
+        <p>取得資格をまとめました<button id="expandAll" class="expand-all-btn">全回答を開く</button></p>
+        <dl>
+            <dt>大阪府ふぐ処理登録者</dt>
+            <dd>取得時期2021年11月/釣り好きの弟が釣ってくるフグを捌くために勉強して取得しました！</dd>
+            <dt>CEFR English C2(英検1級 TOEIC990点相当)</dt>
+            <dd>取得時期2024年2月/2023年からアメリカに留学して英語を勉強し、イギリスで取得しました。英語でプレゼンや交渉ができる程度の語学力はあります。</dd>
+            <dt>宅地建物取引士</dt>
+            <dd>取得時期2020年12月/実家が大家をしているため、家族の助けになればと思い勉強して取得しました。</dd>
+            <dt>小型船舶操縦士</dt>
+            <dd>2017年4月/私の高校がバイク免許が取得できなかったため、どうしても乗り物を操縦したい思いが爆発し取得しました。2020年4月に1級免許を取得しました。</dd>
+            <dt>普通自動車第一種運転免許</dt>
+            <dd>2020年4月/高校卒業して車の免許をすぐに取得しました.</dd>
+            <dt>普通二輪運転免許</dt>
+            <dd>2023年1月/アメリカ留学前に移動手段確保のために二輪免許を取得しました。</dd>
+            <dt>カリフォルニア州運転免許</dt>
+            <dd>2023年8月/留学中に国際免許が盗難に遭い、カリフォルニアで免許を取得しました。</dd>              
+        </dl>
+    </section>
+    </main>
+    
+    <div id="footer"></div>
+</body>
+</html>

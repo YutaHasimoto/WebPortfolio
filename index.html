@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介 - 橋本雄太のポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+        });
+        $(document).ready(function() {
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+    <!-- <img src="images/balloon.png" id="balloon" class="balloon-header"> -->
+    <main>
+        <section>
+            <div class="image-container">
+                <img src="images/resume_light.jpeg" id="resume" usemap="#resume_map" class="image-border">
+                <img src="images/resume_text.png" id="resume-text" class="scalemoving"> 
+                <map name="resume_map">
+                  <area alt="resume to contact" title="resume to contact" href="contact.html" coords="179,828,1419,1094" shape="rect">
+                  <area alt="resume to self-introduction" title="resume to self-introduction" href="self-introduction.html" coords="184,1603,794,1797" shape="rect">
+                  <area alt="resume to 資格" title="resume to 資格" href="licence.html" coords="1070,1608,1680,1802" shape="rect">
+                  <area alt="resume to dna" title="resume to dna" href="dna.html" coords="1734,1608,2697,1806" shape="rect">
+                  <area alt="resume to faq" title="resume to faq" href="self-introduction.html" coords="1177,1821,1569,2005" shape="rect">
+                  <area alt="resume to 3droom" title="resume to 3droom" href="self-introduction.html#3droom" coords="1593,1831,2697,2000" shape="rect">
+                  <area alt="resume to works" title="resume to works" href="works.html" coords="189,2019,654,2208" shape="rect">
+                  <area alt="resume to app" title="resume to app" href="appuiux.html" coords="194,2218,1346,2387" shape="rect">
+                  <area alt="resume to cad" title="resume to cad" href="cad.html" coords="1366,2221,2042,2393" shape="rect">
+                  <area alt="resume to modeling" title="resume to modeling" href="modeling.html" coords="186,2419,910,2595" shape="rect">
+                  <area alt="resume to 3DCG" title="resume to 3DCG" href="works.html" coords="927,2419,1475,2595" shape="rect">
+                  <area alt="resume to data-science" title="resume to data-science" href="data-science.html" coords="1501,2416,2679,2595" shape="rect">
+                  <area alt="resume to shop" title="resume to shop" href="shop.html" coords="186,2612,2695,2800" shape="rect">
+                  <area alt="resume to ai" title="resume to ai" href="ai.html" coords="1580,3193,2795,4015" shape="rect">
+                  <area alt="resume to self-introduction" title="resume to self-introduction" href="self-introduction.html" coords="179,372,1957,808" shape="rect">
+                </map>
+            </div>
+            <script>
+                $('img[usemap]').rwdImageMaps();
+            </script>
+            <!--
+                <img src="images/ai_card.png" id="ai-card" class="animated-big">カードのアニメーション
+            -->
+        </section>
+    </main>
+
+    <div id="footer"></div>
+    <script src="index.js"></script>
+</body>
+</html>

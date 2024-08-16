@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介 - 橋本雄太のポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.147.0/examples/js/controls/OrbitControls.js"></script><!--ビュアーのコントローラーをインストール-->
+    <script src="https://unpkg.com/three@0.147.0/examples/js/loaders/OBJLoader.js"></script><!--objファイルの読み込みツールをインストール-->
+    <script src="https://unpkg.com/three@0.147.0/examples/js/loaders/MTLLoader.js"></script><!--mtlファイルの読み込みツールをインストール-->
+    <script src="3droom.js"></script>
+
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+        });
+        $(document).ready(function() {
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <section>
+            <h2>プライバシーポリシー</h2>
+            <p>当サイトでは個人を特定できない形でアクセス数等の統計データを取得しております。またAIユウタはChatGPTを利用しており、AIユウタ利用時の個人情報保護規約等はOpenAIの定めたものに準拠します。その他ご不明点があれば、<a href="contact.html" target="_blank">こちら</a>からご連絡くださいますと幸いです。</p>
+        </section>
+    </main>
+    
+    <div id="footer"></div>
+</body>
+</html>

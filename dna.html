@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>橋本雄太のポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#header").load("header.html");
+        });
+        $(document).ready(function() {
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <section>
+            <h2>DNA検査結果</h2>
+            <h3 class="icon_dna_defore_title">皆様に私を知ってもらうための遺伝子検査結果ですわ〜！</h3>
+            <h4>能力系遺伝子</h4>
+            <p>運動能力は並、知能系はパズル的なものが得意らしいようですが、弟に勝てた試しがありませんわ〜！</p>
+            <iframe src="/WebPortfolio/PDF/DNA_ability.pdf" width="100%" height="600px"></iframe>
+            <h4>行動系遺伝子</h4>
+            <p>お酒とタバコは苦手ですわ〜！コーヒーも飲むと眠れませんの〜！いつも白湯を飲んでますわ〜！</p>
+            <iframe src="/WebPortfolio/PDF/DNA_action.pdf" width="100%" height="600px"></iframe>
+        </section>
+    </main>
+    
+    <div id="footer"></div>
+</body>
+</html>

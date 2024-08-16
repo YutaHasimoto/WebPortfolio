@@ -1,0 +1,55 @@
+.image-container {
+    position: relative;
+    #ai-card {
+        position: absolute;
+        bottom: 0; /* コンテナの上端に合わせる */
+        right: 0; /* コンテナの左端に合わせる */
+        width: 30%; /* コンテナの幅に合わせて拡大/縮小 */
+        height: auto; /* 高さを自動調整 */
+        pointer-events: none; /* クリックイベントを無視 */
+        animation: slideIn 0.7s ease-out; /* アニメーション名、持続時間、タイミング関数 */
+    }
+}
+
+#resume {
+    width: 100%;
+}
+
+#resume-text {
+    position: absolute;
+    top: -2%; /* コンテナの上端に合わせる */
+    left: 0; /* コンテナの左端に合わせる */
+    width: 100%; /* コンテナの幅に合わせて拡大/縮小 */
+    height: auto; /* 高さを自動調整 */
+    pointer-events: none; /* クリックイベントを無視 */
+}
+
+#ai-card {
+    position: absolute;
+    bottom: 0; /* コンテナの上端に合わせる */
+    right: 0; /* コンテナの左端に合わせる */
+    width: 30%; /* コンテナの幅に合わせて拡大/縮小 */
+    height: auto; /* 高さを自動調整 */
+    pointer-events: none; /* クリックイベントを無視 */
+    animation: slideIn 0.7s ease-out; /* アニメーション名、持続時間、タイミング関数 */
+}
+
+#balloon {
+    position: absolute;
+    width: 35%; /* または必要なサイズに調整 */
+    height: auto; /* または必要なサイズに調整 */
+    top: 10%; /* 必要に応じて調整 */
+    left: 40%; /* 必要に応じて調整 */
+    display: none;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%); /* 右端から開始 */
+    }
+    to {
+        transform: translateX(0); /* 最終位置に移動 */
+    }
+}

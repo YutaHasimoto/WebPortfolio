@@ -1,0 +1,187 @@
+body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+
+/*中央揃え*/
+.center {
+    text-align: center;
+  }  
+
+
+/*動画を中央揃え*/
+.videocenter {
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+    display: block;
+    margin: auto; /* 動画を水平方向に中央揃え */
+}
+
+/*画像ホバー時にちょっと拡大するアニメーション*/
+
+.animated-big {
+    transition: transform 0.3s; /* トランジションの設定 */
+}
+
+.animated-big:hover {
+    transform: scale(1.1); /* マウスホバー時に10%拡大 */
+}
+
+/*幅いっぱいに画像を表示させるための定義*/
+.image-expand-wide {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/*画像の角を丸める定義*/
+.image-radius {
+    border-radius: 25px; /* ここで角の丸さを設定 */
+}
+@media screen and (max-width: 600px) {
+    .image-radius {
+        border-radius: 15px; /* ここで角の丸さを設定 */
+    }
+    
+}
+
+/*メールボタン定義*/
+.mail-button {
+    width: 35vw; /* 画像の幅 */
+    height: calc(35vw * 9/16); /* 画像の高さ */
+    border: 2px solid #333; /* 枠線 */
+    margin: 3px; /* 画像の間隔 */
+}
+
+/*画像の縁を黒くする*/
+.image-border {
+    border: 2px solid #333; /* 枠線 */
+    margin: 3px; /* 画像の間隔 */
+}
+
+/*Flexboxの定義*/
+.flex-container {
+    display: flex; /* Flexboxを有効化 */
+    justify-content: center; /* 横方向の中央揃え */
+    align-items: center; /* 縦方向の中央揃え */
+    flex-wrap: wrap; /* 必要に応じて折り返し。スマホとか */
+}
+
+
+/*見出しアイコン関連のスタイル*/
+.icon_dna_defore_title {
+    padding-left: 50px; /* アイコンのサイズに応じて調整 */
+    background-image: url('images/icon_DNA.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 50px 50px; /* アイコンの実際のサイズに応じて調整 */
+}
+
+/*Q&Aコーナー関連*/
+.faq dl {
+    background: #f9f9f9;
+    border: 1px solid #eaeaea;
+    padding: 20px;
+}
+
+.faq dt {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.faq dd {
+    margin: 0;
+    padding: 10px 0;
+    display: none; /* 初期状態では回答を非表示に */
+}
+
+/*Q&Aコーナの「すべて開く」ボタン関連*/
+.faq-header {
+    display: flex;
+    align-items: center; /* 中央揃え */
+    justify-content: flex-start; /* 左寄せ */
+}
+
+.expand-all-btn {
+    margin-left: 10px; /* タイトルとの間隔を調整 */
+    vertical-align: middle; /* ボタンを中央揃えにする */
+}
+
+/*3Droom関連*/
+.threedCanvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    margin-top: 10px;
+    margin-top: 10px;
+}
+
+.threedCanvas #myCanvas {
+    display: block;
+    margin: auto;
+}
+
+/*拡大縮小アニメーション関連*/
+@keyframes scale-animation {
+    0%, 100% {
+        transform: scale(1); /* 元のサイズ */
+    }
+    50% {
+        transform: scale(1.05); /* 10%拡大 */
+    }
+}
+
+.scalemoving {
+    animation: scale-animation 1s infinite ease-in-out; /* アニメーションの設定 */
+}

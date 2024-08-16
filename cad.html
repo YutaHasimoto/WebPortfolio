@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>モデリング作品集 - 橋本雄太のポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.147.0/examples/js/controls/OrbitControls.js"></script><!--ビュアーのコントローラーをインストール-->
+    <script src="https://unpkg.com/three@0.147.0/examples/js/loaders/OBJLoader.js"></script><!--objファイルの読み込みツールをインストール-->
+    <script src="https://unpkg.com/three@0.147.0/examples/js/loaders/MTLLoader.js"></script><!--mtlファイルの読み込みツールをインストール-->
+    <script src="3diphonecase.js"></script>
+    <script src="3ddraincover.js"></script>
+    <script src="3ddraincover2.js"></script>
+    <script src="3dline.js"></script>
+    <script src="3dmonitor.js"></script>
+    <script src="3dpcstand.js"></script>
+    <script src="3dqistation.js"></script>
+    <script src="3dlightcover.js"></script>
+    <script src="3dmcd.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $("#header").load("header.html");
+        });
+        $(document).ready(function() {
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <section>
+            <img src="images/works_3dcad_button.jpg" alt="CAD作品集はこちらから" width="100%" height="auto">
+            <h2>CAD作品集</h2>
+            <p>3Dプリンタにハマり、様々なものを作っております。使用ソフトは主にFusion360です。たまに細かい作業が必要な時は、使い慣れているBlenderを使うこともあります。</p>
+        </section>
+        <section>
+            <h3>iPhone SEケース</h3>
+            <p>iPhone特有のカメラの出っ張りをフラットにするため、ちょうど良いケースを3Dプリンターで自作しました。</p>
+        </section>
+        <section class="threedCanvas">
+            <canvas id="iphonecase"></canvas>
+        </section>
+
+        <section>
+            <h3>おばあちゃん用テープライトカバー</h3>
+            <p>視覚障害を持つ祖母が安全に家の廊下を歩きつつ、デザインよく華やかにするため、廊下の端にテープライトを走らせ、滑走路のようにすることにしました。その結果、家族がテープライトを蹴っ飛ばしてライトが破損する事故が多発。３Dプリンターで透明な連結可能な保護パーツを作成しました。</p>
+        </section>
+        <section class="threedCanvas">
+            <canvas id="lightcover"></canvas>
+        </section>
+
+        <section>
+            <p>実装例</p>
+            <video src="images/3dlight.mp4" autoplay muted loop class="videocenter" width="300px" height="auto"></video>
+        </section>
+
+        <section>
+            <h3>Qi充電ステーション</h3>
+            <p>視覚障害の祖母がスマホ充電に困っていたので、余ったワイヤレス充電器を使って3Dプリンターで充電ステーションを作りました。</p>
+        </section>
+        <section class="threedCanvas">
+            <canvas id="qistation"></canvas>
+        </section>
+
+        <section>
+            <h3>マクド○ルドの包み紙取り出し機</h3>
+            <p>マ○クでバイトしていた時にハンバーガーの包み紙が超絶取り出しづらく、繁忙期の提供速度に影響していたので、包み紙をたわませて取り出しやすくするパーツを個人的に勝手に設計・3Dプリンターで作成し、提案しました。30以上の試作品を作り、最終的に低コストで製造可能かつ、効率よく機能を果たせるパーツが開発できました。店長のおかげで日本マクド○ルド本社に、この試作パーツの採用を提案していただきました。</p>
+        </section>
+        <section class="threedCanvas">
+            <canvas id="mcd"></canvas>
+        </section>
+
+        <section>
+            <h3>排水溝の蓋</h3>
+            <p>洗濯機の下水が逆流したため、洗濯機のホースと下水管にピッタリはまる蓋を3Dプリンターで作りました</p>
+        </section>
+        <p>下水管を押さえ込むベースメントパーツ</p>
+        <section class="threedCanvas">
+            <canvas id="draincover"></canvas>
+        </section>
+        <p>上からパコっと嵌め込む用パーツ</p>
+        <section class="threedCanvas">
+            <canvas id="draincover2"></canvas>
+        </section>
+
+        <section>
+            <h3>サブディスプレイ縦置き</h3>
+            <p>モバイルモニターを縦置きにしてサブディスプレイとして使えるよう、角度やデザインを考えて制作しました。</p>
+        </section>
+        <section class="threedCanvas">
+            <canvas id="monitor"></canvas>
+        </section>
+
+        <section>
+            <h3>デスクトップPCの脚</h3>
+            <p>窓際にデスクトップを置けるよう、窓枠とPCの段差を埋めるためのピッタリ合う脚を２台制作しました。</p>
+        </section>
+        <section class="threedCanvas">
+            <canvas id="pcstand"></canvas>
+        </section>
+
+        <section>
+            <h3>LINEアイコン</h3>
+            <p>LINE様でのインターンシップの際にお土産に作りました。</p>
+        </section>
+        <section class="threedCanvas">
+            <canvas id="linelogo"></canvas>
+        </section>
+
+
+    </main>
+    
+    <div id="footer"></div>
+</body>
+</html>

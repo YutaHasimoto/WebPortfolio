@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>橋本雄太のポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#header").load("header.html");
+        });
+        $(document).ready(function() {
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <section>
+            <img src="images/works_data_science.jpg" alt="データサイエンス研究成果" width="100%" height="auto">
+            <h2>Pythonとデータサイエンスの重要性</h2>
+            <p>ビジネスの場において意思決定をする際、その裏付けとなるデータは非常に重要です。そしてデータを分析し、成果に繋ぐ方法を生み出すデータサイエンスは必須と言えます。
+                すでにMicrosoftのPowerBIやTableauなどデータサイエンスのツールは充実してきていますが、無料で無数のライブラリを使え、自社のビジネス状況に合わせて柔軟にカスタムできる点において、Pythonによるデータサイエンスは優れています。</p>
+            <p>昨年、私は
+                <img src="images/dataScience_pop.png" alt="これ覚えたら就活で無双できねーかな">
+                ということで、Pythonとデータサイエンスの勉強を始めました。その成果をご覧ください。
+            </p>
+            <p>質問やお問い合わせがあれば、お気軽にご連絡ください。</p>
+            <style>
+                body h2 a {
+                    color: inherit;
+                }
+            </style>
+            <h2><a href="https://colab.research.google.com/drive/137U6kwVEeMYbHMnseMrwt9YmuImCSV6a?usp=sharing">Google colab</a>にて、作成したプログラムやコメント等をご確認いただけます。</h2>
+            <a href="https://colab.research.google.com/drive/137U6kwVEeMYbHMnseMrwt9YmuImCSV6a?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="images/dataScience.png" alt="データサイエンス研究成果" width="100%" height="auto" class="animated-big"></a>
+            <a href="https://colab.research.google.com/drive/137U6kwVEeMYbHMnseMrwt9YmuImCSV6a?usp=sharing" target="_blank" rel="noopener noreferrer"><img src="images/dataScience_heatmap.png" alt="データサイエンス研究成果" width="100%" height="auto" class="animated-big"></a>
+            <a href="https://colab.research.google.com/drive/137U6kwVEeMYbHMnseMrwt9YmuImCSV6a?usp=sharing" target="_blank" rel="noopener noreferrer"><p>Google colabにジャンプします。</p></a>
+        </section>
+    </main>
+    
+    <div id="footer"></div>
+</body>
+</html>

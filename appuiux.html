@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>橋本雄太のポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="works.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#header").load("header.html");
+        });
+        $(document).ready(function() {
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <section>
+            <img src="images/works_app_ui_ux_button.jpg" alt="App作品集はこちらから">
+            <h2>アプリUI・UX作品集</h2>
+            <p>今まで制作したアプリです。体験できますので、触ってみてください!</p>
+            <h3>くらべるニュース</h3>
+            <a href="https://kuraberunews.com/" target="_blank" rel="noopener noreferrer"><image src="images/icon_kuraberunews.png" width="30%" height="auto" class="app-frame"></image></a>
+            <iframe width="100%" height="926" src="https://kuraberunews.com/" frameborder="0" allowfullscreen class="app-iframe"></iframe>
+            <h3>KidsPay(UI作品)</h3>
+            <iframe width="428" height="926" src="https://xd.adobe.com/embed/ee05e7f9-305b-480f-a935-f6094e8eceea-bb56/?fullscreen&hints=off" frameborder="0" allowfullscreen class="app-iframe"></iframe>
+            <h3>アニメSNS(UI作品)</h3>
+            <iframe width="428" height="1022" src="https://xd.adobe.com/embed/11ba4bfa-540c-43c8-8d91-ee5c78517dae-44e9/" frameborder="0" allowfullscreen class="app-iframe"></iframe>
+            <h3>AgentBooster</h3>
+            <iframe width="390" height="844" src="https://xd.adobe.com/embed/eb1af65f-f051-4657-a62a-4e268f372264-be49/" frameborder="0" allowfullscreen class="app-iframe"></iframe>
+        </section>
+    </main>
+    
+    <div id="footer"></div>
+</body>
+</html>
